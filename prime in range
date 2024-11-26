@@ -1,0 +1,28 @@
+import 'dart:io';
+
+void main() {
+Range(7,20);
+}
+
+
+ bool isprime(int n) {
+   if (n < 2) {
+     return false;
+   }
+        for (int i = 2; i < n; i++) {
+       if (n % i == 0) {
+         return false;
+       }
+     }
+   return true;
+   }
+
+
+ void Range(int s,int e){
+
+  for(int i=s+1;i<e;i++){
+if(isprime(i)==true){
+  print(i);
+}
+  }
+ }
